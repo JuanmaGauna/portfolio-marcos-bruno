@@ -1,0 +1,284 @@
+/*=========================================================
+                    VARIABLES
+=========================================================*/
+
+:root{
+
+    --primary:#14324A;
+    --primary-dark:#0E2538;
+
+    --secondary:#B9985B;
+    --secondary-light:#D8C29A;
+
+    --dark:#1F1F1F;
+    --gray:#6B7280;
+    --light:#F7F8FA;
+    --white:#FFFFFF;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+    --radius:16px;
+
+    --transition:.35s ease;
+
+}
+
+/*=========================================================
+                    RESET
+=========================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    color:var(--dark);
+    background:var(--white);
+    overflow-x:hidden;
+    line-height:1.7;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    transition:var(--transition);
+
+}
+
+ul{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+
+section{
+
+    padding:110px 0;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+}
+
+/*=========================================================
+                    TIPOGRAFÍA
+=========================================================*/
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    color:var(--primary);
+
+}
+
+h1{
+
+    font-size:4rem;
+    line-height:1.05;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+}
+
+h3{
+
+    font-size:2rem;
+
+}
+
+p{
+
+    color:var(--gray);
+    font-size:1.05rem;
+
+}
+
+/*=========================================================
+                    BOTONES
+=========================================================*/
+
+.btn{
+
+    padding:14px 34px;
+    border-radius:50px;
+    font-weight:600;
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--secondary);
+    border:none;
+    color:var(--white);
+
+}
+
+.btn-primary:hover{
+
+    background:#a98645;
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-light{
+
+    border:2px solid var(--white);
+    color:var(--white);
+
+}
+
+.btn-outline-light:hover{
+
+    background:var(--white);
+    color:var(--primary);
+
+}
+
+/*=========================================================
+                    NAVBAR
+=========================================================*/
+
+.navbar{
+
+    transition:.4s;
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    color:var(--white);
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:var(--white);
+    margin-left:18px;
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:var(--secondary);
+
+}
+
+/* Clase para aplicar con JavaScript al hacer scroll */
+.navbar.scrolled{
+
+    background:rgba(20,50,74,.95);
+    backdrop-filter:blur(12px);
+    box-shadow:var(--shadow);
+
+}
+
+/*=========================================================
+                    HERO
+=========================================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    background:linear-gradient(rgba(15,32,48,.80),
+                               rgba(15,32,48,.80)),
+               url("../img/hero-bg.jpg") center center/cover;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.hero-subtitle{
+
+    display:inline-block;
+
+    color:var(--secondary);
+
+    letter-spacing:3px;
+
+    font-size:.95rem;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+
+}
+
+.hero h1{
+
+    color:var(--white);
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    color:var(--light);
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    color:#E8E8E8;
+
+    margin-bottom:40px;
+
+    max-width:560px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+.hero-img{
+
+    max-width:470px;
+    margin:auto;
+    filter:drop-shadow(0 25px 45px rgba(0,0,0,.35));
+
+}
