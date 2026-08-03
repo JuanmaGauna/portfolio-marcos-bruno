@@ -1,25 +1,36 @@
 /*=========================================================
-                    VARIABLES
+                    VARIABLES GLOBALES
 =========================================================*/
 
-:root{
+:root {
 
-    --primary:#14324A;
-    --primary-dark:#0E2538;
+    /* Colores */
+    --primary: #14324A;
+    --primary-dark: #0E2538;
 
-    --secondary:#B9985B;
-    --secondary-light:#D8C29A;
+    --secondary: #B9985B;
+    --secondary-dark: #A6864D;
 
-    --dark:#1F1F1F;
-    --gray:#6B7280;
-    --light:#F7F8FA;
-    --white:#FFFFFF;
+    --white: #FFFFFF;
+    --light: #F8F9FA;
+    --gray: #6C757D;
+    --dark: #212529;
 
-    --shadow:0 12px 35px rgba(0,0,0,.08);
+    /* Tipografía */
+    --font-title: "Cormorant Garamond", serif;
+    --font-text: "Inter", sans-serif;
 
-    --radius:16px;
+    /* Espaciados */
+    --section-padding: 100px;
 
-    --transition:.35s ease;
+    /* Bordes */
+    --radius: 16px;
+
+    /* Sombras */
+    --shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    /* Transiciones */
+    --transition: .35s ease;
 
 }
 
@@ -281,4 +292,30 @@ p{
     margin:auto;
     filter:drop-shadow(0 25px 45px rgba(0,0,0,.35));
 
+}
+/*=========================================================
+                CLASES GLOBALES
+=========================================================*/
+
+.section-title {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: var(--gray);
+    max-width: 700px;
+    line-height: 1.8;
 }
