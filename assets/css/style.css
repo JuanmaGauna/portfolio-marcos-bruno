@@ -319,3 +319,148 @@ p{
     max-width: 700px;
     line-height: 1.8;
 }
+/*=========================================================
+                    RESET GENERAL
+=========================================================*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--dark);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+/*=========================================================
+                ESTRUCTURA GENERAL
+=========================================================*/
+
+section {
+    padding: var(--section-padding) 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+::selection {
+    background: var(--secondary);
+    color: var(--white);
+}
+/*=========================================================
+                    NAVBAR
+=========================================================*/
+
+.navbar {
+    padding: 20px 0;
+    background: transparent;
+    transition: var(--transition);
+    z-index: 999;
+}
+
+.navbar.scrolled {
+    background: rgba(20, 50, 74, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow);
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: .5px;
+}
+
+.navbar-brand:hover {
+    color: var(--secondary);
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    position: relative;
+    color: var(--white);
+    font-weight: 500;
+    padding: .5rem .9rem !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: .9rem;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: calc(100% - 1.8rem);
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
