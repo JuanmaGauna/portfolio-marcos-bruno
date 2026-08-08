@@ -311,6 +311,13 @@ body{
         margin-top:20px;
     
     }
+    .about-img{
+        display:block;
+        width:100%;
+        max-width:320px;
+        height:auto;
+        margin:0 auto 40px;
+    }
     
     /*=========================================================
             BOTONES FLOTANTES — MÓVIL
@@ -472,6 +479,9 @@ body{
         right:15px;
         bottom:76px;
     
+    }
+    .about-img{
+        max-width:280px;
     }
     
     }
