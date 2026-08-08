@@ -181,10 +181,37 @@ body{
     }
     
     .hero-img{
+
+        display:block;
+    
+        width:100%;
     
         max-width:320px;
     
-        margin:0 auto 40px;
+        height:auto;
+    
+        margin:0 auto 55px;
+    
+    }
+    .hero .col-lg-6{
+
+        width:100%;
+    
+    }
+    
+    .hero .col-lg-6:first-child{
+    
+        position:relative;
+    
+        z-index:1;
+    
+    }
+    
+    .hero .col-lg-6:last-child{
+    
+        position:relative;
+    
+        z-index:2;
     
     }
     
