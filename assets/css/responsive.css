@@ -157,9 +157,27 @@ body{
     }
     
     .hero{
-    
+        padding-top:110px;
+        padding-bottom:60px;
         text-align:center;
+    }
     
+    .hero .row{
+        min-height:auto !important;
+    }
+    
+    .hero .col-lg-6{
+        position:relative;
+        width:100%;
+    }
+    
+    .hero-img{
+        display:block;
+        width:100%;
+        max-width:320px;
+        height:auto;
+        margin:0 auto 50px;
+        display:block;
     }
     
     .hero h1{
@@ -180,19 +198,6 @@ body{
     
     }
     
-    .hero-img{
-
-        display:block;
-    
-        width:100%;
-    
-        max-width:320px;
-    
-        height:auto;
-    
-        margin:0 auto 55px;
-    
-    }
     .hero .col-lg-6{
 
         width:100%;
