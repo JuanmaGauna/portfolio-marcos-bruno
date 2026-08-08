@@ -311,12 +311,24 @@ body{
         margin-top:20px;
     
     }
+    .about .row{
+        margin-left:0;
+        margin-right:0;
+    }
+    
+    .about .col-lg-6{
+        width:100%;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
     .about-img{
         display:block;
-        width:100%;
-        max-width:320px;
+        width:auto;
+        max-width:100%;
         height:auto;
-        margin:0 auto 40px;
+        margin-left:auto;
+        margin-right:auto;
     }
     
     /*=========================================================
