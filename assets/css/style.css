@@ -35,66 +35,6 @@
 }
 
 /*=========================================================
-                    RESET
-=========================================================*/
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-
-    scroll-behavior:smooth;
-
-}
-
-body{
-
-    font-family:'Inter',sans-serif;
-    color:var(--dark);
-    background:var(--white);
-    overflow-x:hidden;
-    line-height:1.7;
-
-}
-
-img{
-
-    max-width:100%;
-    display:block;
-
-}
-
-a{
-
-    text-decoration:none;
-    transition:var(--transition);
-
-}
-
-ul{
-
-    list-style:none;
-    padding:0;
-    margin:0;
-
-}
-
-section{
-
-    padding:110px 0;
-
-}
-
-.container{
-
-    max-width:1200px;
-
-}
-
-/*=========================================================
                     TIPOGRAFÍA
 =========================================================*/
 
@@ -171,49 +111,6 @@ p{
 
     background:var(--white);
     color:var(--primary);
-
-}
-
-/*=========================================================
-                    NAVBAR
-=========================================================*/
-
-.navbar{
-
-    transition:.4s;
-    padding:18px 0;
-
-}
-
-.navbar-brand{
-
-    font-family:'Cormorant Garamond',serif;
-    font-size:2rem;
-    color:var(--white);
-    font-weight:700;
-
-}
-
-.nav-link{
-
-    color:var(--white);
-    margin-left:18px;
-    font-weight:500;
-
-}
-
-.nav-link:hover{
-
-    color:var(--secondary);
-
-}
-
-/* Clase para aplicar con JavaScript al hacer scroll */
-.navbar.scrolled{
-
-    background:rgba(20,50,74,.95);
-    backdrop-filter:blur(12px);
-    box-shadow:var(--shadow);
 
 }
 
@@ -399,6 +296,9 @@ section {
                     NAVBAR
 =========================================================*/
 
+.navbar{
+    z-index:1050;
+}
 .navbar {
     padding: 20px 0;
     background: transparent;
@@ -839,133 +739,6 @@ section {
 
 }
 /*=========================================================
-                TIMELINE
-=========================================================*/
-
-.timeline-section{
-
-    background:var(--light);
-
-}
-
-.timeline{
-
-    position:relative;
-
-    max-width:900px;
-
-    margin:auto;
-
-}
-
-.timeline::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:30px;
-
-    top:0;
-
-    width:3px;
-
-    height:100%;
-
-    background:var(--secondary);
-
-}
-
-.timeline-item{
-
-    position:relative;
-
-    padding-left:90px;
-
-    margin-bottom:60px;
-
-}
-
-.timeline-item:last-child{
-
-    margin-bottom:0;
-
-}
-
-.timeline-item::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:18px;
-
-    top:10px;
-
-    width:26px;
-
-    height:26px;
-
-    border-radius:50%;
-
-    background:var(--secondary);
-
-    border:5px solid var(--white);
-
-    box-shadow:var(--shadow);
-
-}
-
-.timeline-content{
-
-    background:var(--white);
-
-    padding:35px;
-
-    border-radius:var(--radius);
-
-    box-shadow:var(--shadow);
-
-}
-
-.timeline-date{
-
-    display:inline-block;
-
-    margin-bottom:12px;
-
-    color:var(--secondary);
-
-    font-weight:700;
-
-    letter-spacing:1px;
-
-    text-transform:uppercase;
-
-    font-size:.9rem;
-
-}
-
-.timeline-content h3{
-
-    color:var(--primary);
-
-    margin-bottom:8px;
-
-}
-
-.timeline-content h5{
-
-    color:var(--gray);
-
-    margin-bottom:20px;
-
-    font-size:1rem;
-
-    font-weight:600;
-
-}
-/*=========================================================
             TIMELINE PREMIUM
 =========================================================*/
 
@@ -1133,39 +906,6 @@ section {
 
 }
 /*=========================================================
-            TIMELINE RESPONSIVE
-=========================================================*/
-
-@media (max-width:991px){
-
-    .timeline::before{
-    
-        left:20px;
-    
-    }
-    
-    .timeline-item{
-    
-        width:100%;
-    
-        left:0 !important;
-    
-        padding-left:60px;
-    
-        padding-right:0;
-    
-        text-align:left !important;
-    
-    }
-    
-    .timeline-item::before{
-    
-        left:9px !important;
-    
-    }
-    
-    }
-    /*=========================================================
             COMPETENCIAS PROFESIONALES
 =========================================================*/
 
@@ -1584,49 +1324,6 @@ section {
 
 }
 /*=========================================================
-                NAVBAR SCROLL
-=========================================================*/
-
-.navbar{
-
-    transition:all .35s ease;
-
-    padding:22px 0;
-
-}
-
-.navbar.scrolled{
-
-    background:rgba(20,50,74,.97);
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-
-    padding:12px 0;
-
-}
-
-.navbar .nav-link.active{
-
-    color:var(--secondary) !important;
-
-    font-weight:600;
-
-}
-
-.navbar-brand{
-
-    transition:var(--transition);
-
-}
-
-.navbar.scrolled .navbar-brand{
-
-    transform:scale(.98);
-
-}
-/*=========================================================
             MICROANIMACIONES
 =========================================================*/
 
@@ -1685,12 +1382,5 @@ section {
 .btn:hover{
 
     transform:translateY(-3px);
-
-}
-::selection{
-
-    background:var(--secondary);
-
-    color:var(--white);
 
 }
