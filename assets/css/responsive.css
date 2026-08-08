@@ -323,57 +323,120 @@ body{
     }
     
    
-.about .about-img{
-    display:block !important;
-    width:100% !important;
-    max-width:100% !important;
-    height:auto !important;
-    object-fit:contain;
-    margin:0 auto 40px;
-}
-.about .row{
-    width:100%;
-    margin-left:0;
-    margin-right:0;
-}
+    .about .about-img{
+        display:block !important;
+        width:100% !important;
+        max-width:100% !important;
+        height:auto !important;
+        object-fit:contain;
+        margin:0 auto 40px;
+    }
+    .about .row{
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
 
-.about .col-lg-5,
-.about .col-lg-7{
-    min-width:0;
-    max-width:100%;
-}
+    .about .col-lg-5,
+    .about .col-lg-7{
+        min-width:0;
+        max-width:100%;
+    }
     
     /*=========================================================
             BOTONES FLOTANTES — MÓVIL
-=========================================================*/
+    =========================================================*/
 
-.whatsapp-float{
-
+    .whatsapp-float{
     width:54px;
     height:54px;
-
     right:18px;
     bottom:18px;
-
     font-size:1.6rem;
-
     z-index:1100;
-
-}
-
-#backToTop{
-
-    width:46px;
-    height:46px;
-
-    right:18px;
-    bottom:84px;
-
-    z-index:1099;
-
-}
-    
     }
+
+    #backToTop{
+        width:46px;
+        height:46px;
+        right:18px;
+        bottom:84px;
+        z-index:1099;
+    }
+    /*=========================================================
+                CONTACTO — MÓVIL
+=========================================================*/
+
+.contact{
+    text-align:center;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    margin-bottom:40px;
+}
+
+.contact-item{
+    width:100%;
+    max-width:320px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:15px;
+    text-align:left;
+}
+
+.contact-item i{
+    flex:0 0 48px;
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-item div{
+    flex:1;
+}
+/*=========================================================
+                FOOTER — MÓVIL
+=========================================================*/
+
+.footer{
+    text-align:center;
+}
+
+.footer .container{
+    width:100%;
+}
+
+.footer-links{
+    margin-top:25px;
+}
+
+.footer-links ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.footer-bottom{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-align:center;
+    margin-top:30px;
+}
+
+.footer-bottom p{
+    margin:0;
+}
+}
 /*=========================================================
                 MÓVILES PEQUEÑOS
 =========================================================*/
