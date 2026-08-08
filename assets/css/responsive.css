@@ -280,25 +280,35 @@ body{
     
     }
     
-    .whatsapp-float{
-    
-        width:58px;
-    
-        height:58px;
-    
-        right:20px;
-    
-        bottom:20px;
-    
-    }
-    
-    #backToTop{
-    
-        right:20px;
-    
-        bottom:90px;
-    
-    }
+    /*=========================================================
+            BOTONES FLOTANTES — MÓVIL
+=========================================================*/
+
+.whatsapp-float{
+
+    width:54px;
+    height:54px;
+
+    right:18px;
+    bottom:18px;
+
+    font-size:1.6rem;
+
+    z-index:1100;
+
+}
+
+#backToTop{
+
+    width:46px;
+    height:46px;
+
+    right:18px;
+    bottom:84px;
+
+    z-index:1099;
+
+}
     
     }
 /*=========================================================
@@ -413,20 +423,22 @@ body{
     }
     
     .whatsapp-float{
+
+        width:50px;
+        height:50px;
     
-        width:54px;
-    
-        height:54px;
-    
-        font-size:1.7rem;
+        right:15px;
+        bottom:15px;
     
     }
     
     #backToTop{
     
-        width:48px;
+        width:44px;
+        height:44px;
     
-        height:48px;
+        right:15px;
+        bottom:76px;
     
     }
     
@@ -517,22 +529,22 @@ body{
     }
     
     .whatsapp-float{
+
+        width:48px;
+        height:48px;
     
-        width:50px;
-    
-        height:50px;
-    
-        font-size:1.5rem;
+        right:14px;
+        bottom:14px;
     
     }
     
     #backToTop{
     
-        width:45px;
+        width:42px;
+        height:42px;
     
-        height:45px;
-    
-        bottom:80px;
+        right:14px;
+        bottom:72px;
     
     }
     

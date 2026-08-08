@@ -34,10 +34,10 @@ navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
+        const collapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+
         if (navbarCollapse.classList.contains("show")) {
-
-            bootstrap.Collapse.getInstance(navbarCollapse).hide();
-
+            collapse.hide();
         }
 
     });
