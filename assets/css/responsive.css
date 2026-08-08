@@ -322,14 +322,26 @@ body{
         padding-right:15px;
     }
     
-    .about-img{
-        display:block;
-        width:auto;
-        max-width:100%;
-        height:auto;
-        margin-left:auto;
-        margin-right:auto;
-    }
+   
+.about .about-img{
+    display:block !important;
+    width:100% !important;
+    max-width:100% !important;
+    height:auto !important;
+    object-fit:contain;
+    margin:0 auto 40px;
+}
+.about .row{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+.about .col-lg-5,
+.about .col-lg-7{
+    min-width:0;
+    max-width:100%;
+}
     
     /*=========================================================
             BOTONES FLOTANTES — MÓVIL
